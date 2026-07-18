@@ -6,7 +6,7 @@ import AddCourseModal from "../components/courses/AddCourseModal";
 import EditCourseModal from "../components/courses/EditCourseModal";
 import ConfirmModal from "../components/common/ConfirmModal";
 
-import "../styles/dashboard.css";
+import "../styles/Dashboard.css";
 import "../styles/Courses.css";
 
 function Courses() {

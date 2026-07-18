@@ -14,7 +14,7 @@ function WelcomeBanner() {
                     <h2>Welcome back, Admin!</h2>
 
                     <p>
-                        Manage students, courses, and subjects efficiently in one place.
+                        Manage students, courses efficiently in one place.
                     </p>
                 </div>
 

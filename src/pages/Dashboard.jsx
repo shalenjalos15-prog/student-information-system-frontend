@@ -3,7 +3,7 @@ import Header from "../components/layout/Header";
 import WelcomeBanner from "../components/dashboard/WelcomeBanner";
 import StatCard from "../components/dashboard/StatCard";
 import RecentStudents from "../components/dashboard/RecentStudents";
-import "../styles/dashboard.css";
+import "../styles/Dashboard.css";
 
 function Dashboard() {
   return (
@@ -35,13 +35,6 @@ function Dashboard() {
             title="Courses"
             value="8"
             color="#2563EB"
-          />
-
-          <StatCard
-            icon="bi-journal-bookmark-fill"
-            title="Subjects"
-            value="35"
-            color="#3B82F6"
           />
 
           <StatCard

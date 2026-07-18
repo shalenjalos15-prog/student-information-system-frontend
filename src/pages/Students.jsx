@@ -9,7 +9,7 @@ import ViewStudentModal from "../components/students/ViewStudentModal";
 import Modal from "../components/common/Modal";
 
 import "../styles/Students.css";
-import "../styles/dashboard.css";
+import "../styles/Dashboard.css";
 
 function Students() {
     const [showFormModal, setShowFormModal] = useState(false);

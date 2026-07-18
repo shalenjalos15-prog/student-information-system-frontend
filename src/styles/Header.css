@@ -1,0 +1,153 @@
+/* ===========================
+   DASHBOARD HEADER
+=========================== */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #FFFFFF;
+
+    padding: 18px 28px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title {
+    margin: 0;
+
+    color: #1E3A8A;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.page-subtitle {
+    margin-top: 4px;
+
+    color: #6B7280;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===========================
+   NOTIFICATION
+=========================== */
+
+.notification-btn {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #EEF5FF;
+
+    color: #1E3A8A;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.notification-btn i {
+    font-size: 18px;
+}
+
+.notification-btn:hover {
+    background: #1E3A8A;
+    color: #FFFFFF;
+
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-avatar {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #1E3A8A;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.admin-profile h6 {
+    margin: 0;
+
+    color: #1F2937;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.admin-profile small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #6B7280;
+
+    font-size: 12px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}

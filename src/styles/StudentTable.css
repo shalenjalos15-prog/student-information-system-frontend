@@ -1,0 +1,45 @@
+.student-table-card{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+}
+
+.student-table-card table{
+
+    margin-bottom:0;
+
+}
+
+.student-table-card thead th{
+
+    color:#1E3A8A;
+
+    font-weight:600;
+
+    border-bottom:2px solid #D1D5DB;
+
+}
+
+.student-table-card tbody td{
+
+    vertical-align:middle;
+
+}
+
+.student-table-card tbody tr:hover{
+
+    background:#EEF5FF;
+
+}
+
+.student-table-card .btn{
+
+    border-radius:10px;
+
+}

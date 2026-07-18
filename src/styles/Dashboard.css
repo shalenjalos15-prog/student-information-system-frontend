@@ -1,0 +1,19 @@
+.dashboard-container {
+    display: flex;
+    background: #EEF5FF; 
+    min-height: 100vh; 
+    overflow: hidden; 
+    width: 100%;
+}
+
+.dashboard-content {
+    flex: 1;
+    margin-left: 260px; 
+    min-width: 0; 
+    padding: 32px 32px 48px 32px; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 24px; /* Establishes a uniform vertical rhythm between all main components */
+    background: #EEF5FF; 
+}

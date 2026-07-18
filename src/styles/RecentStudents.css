@@ -1,0 +1,147 @@
+/* ===========================
+   RECENT STUDENTS
+=========================== */
+
+.recent-students {
+    background: #FFFFFF;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.table-header h3 {
+    margin: 0;
+
+    color: #1E3A8A;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.table-header .btn-primary {
+    background: #1E3A8A;
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all .25s ease;
+}
+
+.table-header .btn-primary:hover {
+    background: #162F6A;
+
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #F8FAFC;
+
+    color: #1E3A8A;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #E5E7EB;
+
+    padding: 16px 14px;
+}
+
+.table tbody td {
+    padding: 18px 14px;
+
+    font-size: 14px;
+
+    color: #374151;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.table tbody tr {
+    transition: background .2s ease;
+}
+
+.table tbody tr:hover {
+    background: #F8FBFF;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.table .btn {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    border-radius: 8px;
+
+    transition: all .2s ease;
+}
+
+.table .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .recent-students {
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 700px;
+    }
+
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   1. REGIONAL HIGHLIGHT BANNERS
+   ========================================================================== */
+.section-title {
+    color: #1E3A8A; /* Your primary dark blue */
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+    padding: 8px 14px;
+    background: #EEF5FF; /* Soft background banner highlight strip */
+    border-radius: 6px;
+    border-left: 4px solid #1E3A8A; /* Thick anchor point line */
+}
+
+.section-title:first-of-type {
+    margin-top: 0; /* Prevents awkward top margin gap inside the modal body */
+}
+
+/* ==========================================================================
+   2. REFINED FORM LABELS & CONTROL HOOKS
+   ========================================================================== */
+.form-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #374151; /* Dark grey secondary copy readability */
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+    height: 40px; /* Slimmer, crisp enterprise desktop scale */
+    border: 1.5px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    box-shadow: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, .12); /* Clean focus ring glow */
+}
+
+/* Disabled input formatting for database-defined properties */
+.modal-body .form-control.field-disabled {
+    background-color: #F3F4F6;
+    border-color: #E5E7EB;
+    color: #6B7280;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   3. ACTION LAYER CONTROL STYLES
+   ========================================================================== */
+.cancel-btn {
+    border: 1px solid #D1D5DB;
+    background: #FFFFFF;
+    color: #374151;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cancel-btn:hover {
+    background: #F3F4F6;
+}
+
+.save-btn {
+    background: #1E3A8A;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.save-btn:hover {
+    background: #162F6A; /* Warmer deep blue hover state change */
+}

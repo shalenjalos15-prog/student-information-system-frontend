@@ -1,4 +1,4 @@
-import "../../styles/recentStudents.css";
+import "../../styles/RecentStudents.css";
 
 function RecentStudents() {
 

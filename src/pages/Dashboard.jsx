@@ -3,50 +3,44 @@ import Header from "../components/layout/Header";
 import WelcomeBanner from "../components/dashboard/WelcomeBanner";
 import StatCard from "../components/dashboard/StatCard";
 import RecentStudents from "../components/dashboard/RecentStudents";
+import QuickActions from "../components/dashboard/QuickActions";
 import "../styles/Dashboard.css";
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
-
       <Sidebar />
 
       <main className="dashboard-content">
-
-        <Header 
-            title="Dashboard"
-            subtitle="Welcome back, Admin!"
-        
+        <Header
+          title="Dashboard"
+          subtitle="Manage your Student Information System efficiently."
         />
 
         <WelcomeBanner />
 
         <div className="stats-grid">
-
           <StatCard
             icon="bi-people-fill"
-            title="Students"
+            title="Total Students"
             value="250"
-            color="#1E3A8A"
+            trend="+12 this term"
+            variant="primary"
           />
 
           <StatCard
-            icon="bi-book-fill"
-            title="Courses"
+            icon="bi-journal-bookmark-fill"
+            title="Total Courses"
             value="8"
-            color="#2563EB"
-          />
-
-          <StatCard
-            icon="bi-person-check-fill"
-            title="Active Students"
-            value="235"
-            color="#16A34A"
+            trend="Across 4 departments"
+            variant="success"
           />
         </div>
 
-        <RecentStudents />
-
+        <div className="dashboard-grid">
+          <RecentStudents />
+          <QuickActions />
+        </div>
       </main>
     </div>
   );

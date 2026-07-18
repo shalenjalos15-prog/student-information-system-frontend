@@ -1,0 +1,321 @@
+/* =========================================================
+   SHARED DATA CARD + TABLE SYSTEM
+   Used by Recent Students, Students page, and Courses page
+   ========================================================= */
+.data-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.data-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.data-card-header h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.data-card-header .subtext {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* ---------- Toolbar (search + add) ---------- */
+.data-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.data-search {
+    flex: 1;
+    max-width: 340px;
+    min-width: 200px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 42px;
+    padding: 0 14px;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-search:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.data-search i {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+.data-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.data-add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    height: 42px;
+    padding: 0 18px;
+
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-add-btn:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.28);
+}
+
+/* ---------- Table ---------- */
+.data-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+}
+
+.data-table thead th {
+    background: var(--background);
+    color: var(--text-secondary);
+
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+
+    padding: 14px 22px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.data-table tbody td {
+    padding: 15px 22px;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra striping */
+.data-table tbody tr:nth-child(even) {
+    background: #fbfcfe;
+}
+
+.data-table tbody tr:hover {
+    background: var(--primary-soft);
+}
+
+.cell-strong {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cell-muted {
+    color: var(--text-secondary);
+}
+
+/* ---------- Status badges ---------- */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.status-active {
+    background: var(--success-soft);
+    color: #16a34a;
+}
+
+.status-inactive {
+    background: #f1f5f9;
+    color: var(--text-secondary);
+}
+
+/* ---------- Row action buttons ---------- */
+.row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--card);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.18s ease;
+}
+
+.icon-btn.view {
+    color: var(--primary);
+}
+
+.icon-btn.view:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.icon-btn.edit {
+    color: var(--warning);
+}
+
+.icon-btn.edit:hover {
+    background: var(--warning);
+    border-color: var(--warning);
+    color: #fff;
+}
+
+.icon-btn.delete {
+    color: var(--danger);
+}
+
+.icon-btn.delete:hover {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: #fff;
+}
+
+/* ---------- Pagination ---------- */
+.data-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+
+    padding: 14px 22px;
+    border-top: 1px solid var(--border);
+}
+
+.data-pagination .page-info {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.page-controls {
+    display: flex;
+    gap: 6px;
+}
+
+.page-btn {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.page-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 576px) {
+    .data-add-btn span,
+    .data-search {
+        width: 100%;
+    }
+
+    .data-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .data-add-btn {
+        justify-content: center;
+    }
+}
